@@ -11,18 +11,18 @@ export default function InputBar({ onSend }) {
   };
 
   return (
-    <div className="m-4 px-3 py-3 bg-zinc-700 rounded-full flex justify-between items-center ">
+    <div className="m-4 p-2 bg-zinc-700 rounded-full flex justify-between items-center ">
       <input
         value={prompt}
         onChange={(e) => setPrompt(e.target.value)}
         onKeyDown={(e) => {
-          if (e.key === "enter" && !e.shiftKey) {
+          if (e.key === "Enter") {
             e.preventDefault(); // stop newline
             handleSend();       // ✅ call the function
           }
         }}
         placeholder="Ask something..."
-        className="flex-1 px-3 bg-zinc-700 text-gray-100 text-sm rounded-lg outline-none"
+        className="flex-1 px-6 bg-zinc-700 text-gray-100 text-sm rounded-lg outline-none"
       />
 
       <button
@@ -31,8 +31,8 @@ export default function InputBar({ onSend }) {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="40"
+          height="40"
           fill="currentColor"
           viewBox="0 0 16 16"
         >

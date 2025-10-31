@@ -65,7 +65,7 @@ export default function Home() {
               {/* Always scroll to this div */}
               <div ref={bottomRef} />
             </div>
-            : <h1 className="text-2xl font-bold text-center">Hello, How Can I help you?</h1>
+            : <h1 className="lg:text-5xl text-2xl my-4 font-bold text-center">Hello, How Can I help you?</h1>
           }
 
           <InputBar onSend={sendMessage} />

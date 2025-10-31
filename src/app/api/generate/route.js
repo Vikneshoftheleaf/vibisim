@@ -7,9 +7,8 @@ import {
 export async function POST(req) {
   const { prompt, dsl } = await req.json();
   const fullPrompt = `
-You are a strict Java code generator that must follow the following DSL style rules:
+You are a strict Java code generator,you will given with a request with rules, the request indicate the code which is requested by the user, the rules indicates that you need to create code on that style by following the given rules, you need to generate the clean JAVA code based on these rules:
 ${dsl}
-
 Now generate Java code for the following request:
 ${prompt}
 `;
