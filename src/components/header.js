@@ -6,7 +6,7 @@ export default function Header() {
 
     return (
         <nav className="border-b border-zinc-600 absolute z-10 top-0 right-0 left-0 bg-zinc-900 text-zinc-100 py-2 px-8 flex justify-between items-center">
-            <h1>Vibisim</h1>
+            <h1 className="font-bold">Vibism</h1>
 
             <button
                 className="hover:bg-gray-800 rounded-full p-2"
