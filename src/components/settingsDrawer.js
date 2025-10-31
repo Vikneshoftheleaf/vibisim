@@ -99,7 +99,7 @@ export default function SettingsDrawer({ open, onClose }) {
       <textarea
         value={dsl}
         onChange={(e) => setDsl(e.target.value)}
-        className="mt-4 w-full h-80 p-4 text-sm bg-zinc-800 text-zinc-100 rounded-md focus:outline-none border-zinc-800"
+        className="mt-4 w-full h-[70%] p-4 text-sm bg-zinc-800 text-zinc-100 rounded-md focus:outline-none border-zinc-800"
         placeholder="Enter your DSL here..."
       />
 
